@@ -1,17 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jarvis</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json" />
-</head>
-<body>
-  <h1>Jarvis Activado</h1>
-  <button id="micBtn">🎤 Hablar</button>
-  <div id="output"></div>
+</header>
 
-  <script src="script.js"></script>
+
+<main>
+<section class="panel">
+<div class="status">
+<span id="micStatus">🎤 Micrófono: <b>apagado</b></span>
+<span id="permStatus"></span>
+</div>
+<div class="controls">
+<button id="talkBtn">Hablar</button>
+<button id="stopBtn">Detener</button>
+<button id="testVoiceBtn">Probar voz</button>
+<button id="notifyBtn">Permitir notificaciones</button>
+</div>
+<div class="io">
+<div>
+<h3>Lo que dijiste</h3>
+<div id="youSaid" class="box"></div>
+</div>
+<div>
+<h3>Respuesta</h3>
+<div id="assistantSaid" class="box"></div>
+</div>
+</div>
+<div class="type-area">
+<input id="textCmd" placeholder="Escribe un comando… (Enter para enviar)" />
+<button id="sendText">Enviar</button>
+</div>
+</section>
+
+
+<section class="help">
+<h3>Ejemplos que entiende</h3>
+<ul>
+<li><code>hola jarvis</code>, <code>preséntate</code></li>
+<li><code>qué hora es</code></li>
+<li><code>clima de Tecámac</code></li>
+<li><code>busca varanos en wikipedia</code></li>
+<li><code>abre youtube</code>, <code>abre google</code></li>
+<li><code>nota comprar grillos</code> / <code>leer notas</code> / <code>borrar notas</code></li>
+<li><code>recordatorio a las 18:30 llamar a mamá</code></li>
+<li><code>cuéntame un chiste</code>, <code>modo oscuro</code>, <code>volumen 60</code>, <code>mute</code></li>
+</ul>
+</section>
+</main>
+
+
+<footer>
+<small>Hecho en el navegador · PWA · Español (MX)</small>
+</footer>
+
+
+<script src="script.js"></script>
 </body>
 </html>
